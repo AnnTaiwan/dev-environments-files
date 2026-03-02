@@ -1,5 +1,5 @@
 return{
-    "nvim-treesitter/nvim-treesitter", build = ":TSUpdate",
+    "nvim-treesitter/nvim-treesitter", branch = "master", build = ":TSUpdate",
     enabled = true,
     config = function()
         -- import nvim-treesitter plugin
@@ -7,6 +7,7 @@ return{
 
         -- configure treesitter
         treesitter.setup({ -- enable syntax highlighting
+            auto_intsall = true,
             -- highlight = { enable = true }, -- will cause problem in highlighting
             -- enable indentation
             indent = { enable = true },
