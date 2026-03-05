@@ -1,5 +1,5 @@
 return{
-    "nvim-treesitter/nvim-treesitter", branch = "master", build = ":TSUpdate",
+    "nvim-treesitter/nvim-treesitter", branch = 'master', build = ":TSUpdate",
     enabled = true,
     config = function()
         -- import nvim-treesitter plugin
